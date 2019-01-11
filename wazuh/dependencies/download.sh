@@ -4,5 +4,5 @@ for file in $(cat ./files)
 do
  apt-get install --download-only "$file" -y
     echo "$file"
-sleep 5s
 done
+cp /var/cache/apt/archives/*.deb .
