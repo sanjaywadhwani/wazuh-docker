@@ -23,7 +23,7 @@
 	    └── Dockerfile
 
 ## Instructions
-*  1. Execute dependencies/download.sh 
+*  1. Execute as root dependencies/download.sh 
 *  2. Specify the full path for the dependencies directory at the docker-compose.yml file
    Example:
 ```yml  
