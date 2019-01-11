@@ -23,13 +23,11 @@
 	    └── Dockerfile
 
 ## Instructions
-*  1. Give execution permisions to download.sh
-*  2. Enter into dependencies.
-*  3. Execute download.sh
-*  4. Go back to wazuh-docker directory.
-*  5. Specify the full path for the dependencies directory at the docker-compose.yml file
+*  1. Execute dependencies/download.sh 
+*  2. Specify the full path for the dependencies directory at the docker-compose.yml file
+   Example:
 ```yml  
 - dependencies_full_path:/home:Z
 ```
 
-*  5. Execute docker-compose build ./wazuh
+*  3. Execute docker-compose build ./wazuh
