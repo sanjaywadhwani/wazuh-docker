@@ -23,11 +23,5 @@
 	    └── Dockerfile
 
 ## Instructions
-*  1. Execute as root dependencies/download.sh 
-*  2. Specify the full path for the dependencies directory at the docker-compose.yml file
-   Example:
-```yml  
-- dependencies_full_path:/home:Z
-```
-
-*  3. Execute docker-compose build ./wazuh
+*  1. Copy the content of dependencies-wazuh-manager-docker.tar.gz to the dependencies folder.
+*  2. Execute docker-compose build 
