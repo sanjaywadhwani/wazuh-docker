@@ -1,1 +1,0 @@
-openssl postfix bsd-mailx python-boto python-pip  apt-transport-https vim expect nodejs python-cryptography wazuh-manager=3.7.2-1 wazuh-api=3.7.2-1 mailutils libsasl2-modules
