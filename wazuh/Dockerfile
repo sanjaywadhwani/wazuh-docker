@@ -1,5 +1,5 @@
 # Wazuh App Copyright (C) 2018 Wazuh Inc. (License GPLv2)
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:0.10.0
 ARG FILEBEAT_VERSION=6.5.4
 
 # Creating ossec user as uid:gid 1000:1000
