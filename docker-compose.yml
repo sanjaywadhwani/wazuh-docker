@@ -51,7 +51,7 @@ services:
       - network.host=0.0.0.0
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms6g -Xmx6g"
-   ulimits:	
+    ulimits:	
       memlock:	
         soft: -1	
         hard: -1	
