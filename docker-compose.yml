@@ -51,10 +51,10 @@ services:
       - network.host=0.0.0.0
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms6g -Xmx6g"
-    ulimits:	
-      memlock:	
-        soft: -1	
-        hard: -1	
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
     mem_limit: 8g
 #    volumes:
 #      - my-path:/usr/share/elasticsearch/data:Z
