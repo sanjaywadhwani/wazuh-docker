@@ -37,7 +37,7 @@ services:
     depends_on:
       - elasticsearch
     environment:
-      - LS_HEAP_SIZE=2048m
+      - LS_HEAP_SIZE=4096m
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
     hostname: elasticsearch
@@ -50,12 +50,7 @@ services:
       - cluster.name=wazuh
       - network.host=0.0.0.0
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    mem_limit: 2g
+      - "ES_JAVA_OPTS=-Xms6g -Xmx6g"
 #    volumes:
 #      - my-path:/usr/share/elasticsearch/data:Z
     networks:
